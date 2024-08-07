@@ -16,7 +16,7 @@ jobs:
          run: npm test
   deploy:
     runs-on: ubuntu-latest
-    #needs: test-job
+    needs: test-job
     steps:
        - name: Download Repository
          uses: actions/checkout@v4
